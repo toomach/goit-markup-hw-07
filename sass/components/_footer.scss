@@ -1,0 +1,135 @@
+.footer {
+    letter-spacing: 0.03em;
+    background-color: var(--footer-background-color);
+    padding-top: 60px;
+    padding-bottom: 60px;
+}
+
+.footer .container {
+    display: flex;
+    align-items: baseline;
+}
+
+.footer__contacts-container {
+    width: 231px;
+    margin-left: 0;
+}
+
+.contacts-container__footer {
+    margin-right: 70px;
+}
+
+.logo {
+    display: block;
+
+    &--light {
+        color: var(--third-text-color);
+    }
+}
+
+.footer__logo {
+    margin-bottom: 20px;
+}
+
+.footer-contacts {
+    font-style: normal;
+    line-height: 1.71;
+}
+
+.footer-contacts__item+.footer-contacts__item {
+    margin-top: 9px;
+}
+
+.footer-contacts__link {
+    color: var(--footer-text-color);
+    font-size: 14px;
+    transition: color var(--transition);
+
+    &--light {
+        color: var(--third-text-color);
+    }
+
+    &:hover,
+    &:focus {
+        color: var(--main-hover-color);
+    }
+}
+
+.footer__footer-join {
+    margin-right: 93px;
+}
+
+.footer-join__title {
+    margin-bottom: 20px;
+}
+
+.socials-list__link {
+    &--dark-bg {
+        width: 44px;
+        height: 44px;
+        background-color: rgba(255, 255, 255, 0.1);
+        transition: background-color var(--transition);
+    }
+
+    &:hover,
+    &:focus {
+        background-color: var(--main-hover-color);
+    }
+}
+
+.socials-list__icon {
+    &--light {
+        fill: var(--third-text-color);
+    }
+
+    .socials-list__link & {
+        transition: background-color var(--transition);
+    }
+
+    .socials-list__link:hover &,
+    .socials-list__link:focus & {
+        fill: var(--secondary-hover-color);
+    }
+}
+
+.footer-subscribe__title {
+    margin-bottom: 20px;
+}
+
+.subscribe__form {
+    display: flex;
+}
+
+.subscribe-form__input {
+    background-color: inherit;
+    padding: 15px 0px 15px 16px;
+    width: 358px;
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+    border-radius: 4px;
+    margin-right: 12px;
+    color: var(--third-text-color);
+
+    &::placeholder {
+        font-size: 16px;
+        line-height: 1.25;
+        letter-spacing: 0.03em;
+        color: var(--footer-text-color);
+    }
+}
+
+.subscribe-form__button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 200px;
+    height: 50px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+.subscribe-form__icon {
+    fill: currentColor;
+    margin-left: 10px;
+    display: inline-block;
+}
